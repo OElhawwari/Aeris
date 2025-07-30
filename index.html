@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Predictor</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/icon.png">
+
+</head>
+
+<body>
+
+    <main id="main" class="main">
+
+        <header id="header" class="header position-relative">
+
+            <div
+                class="main-container-fluid container-fluid d-flex flex-column align-items-center justify-content-center vh-100">
+                <div class="overlayDay w-100 vh-100 position-absolute"></div>
+                <div class="overlayNight w-100 vh-100 position-absolute"></div>
+
+                <div class="row">
+
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center z-3">
+
+                        <div class="search-form w-75">
+                            <input type="search" id="searchInput" class="form-control searchInput"
+                                placeholder="Find Your Location ..." aria-label="Search" />
+                        </div>
+
+                    </div>
+
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="currentDay" class="col-12 d-flex flex-row text-center text-white py-4">
+
+                                    <div
+                                        class="col-12 d-flex flex-column align-items-center justify-content-center gap-3">
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                            <div id="weatherStatusIcon"
+                                                class="weatherStatusIcon d-flex align-items-center justify-content-center">
+                                            </div>
+                                            <div class="status"></div>
+                                        </div>
+
+                                        <div class="temperature"></div>
+
+
+                                        <div>
+                                            <div class="city fst-italic"></div>
+                                            <div class="country fst-italic"></div>
+                                            <div class="day fst-italic"> </div>
+                                            <div class="time fst-italic"> </div>
+                                        </div>
+
+                                        <div
+                                            class="col-12 d-flex flex-row align-content-center justify-content-center gap-2">
+
+                                            <span class="windSpeed d-flex flex-row gap-2">
+                                                <img src="img/icon-wind.png" alt="">
+                                                <span></span>
+                                            </span>
+                                            <span class="windDirection d-flex flex-row gap-2">
+                                                <img src="img/icon-compass.png" alt="">
+                                                <span></span>
+                                            </span>
+
+                                            <span class="fallDetection d-flex flex-row gap-2">
+                                                <img src="img/icon-umberella.png" alt="">
+                                                <span></span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="carousel-item ">
+                                <div id="nextDay" class="col-12 d-flex flex-row text-center text-white py-4">
+                                    <div
+                                        class="col-12 d-flex flex-column align-items-center justify-content-center gap-3">
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                            <div id="weatherStatusIcon"
+                                                class="weatherStatusIcon d-flex align-items-center justify-content-center">
+                                            </div>
+                                            <div class="status"></div>
+                                        </div>
+
+                                        <div class="temperature"></div>
+
+
+                                        <div>
+                                            <div class="city fst-italic"></div>
+                                            <div class="country fst-italic"></div>
+                                            <div class="day fst-italic"> </div>
+                                            <div class="time fst-italic"> </div>
+                                        </div>
+
+                                        <div
+                                            class="col-12 d-flex flex-row align-content-center justify-content-center gap-2">
+
+                                            <span class="windSpeed d-flex flex-row gap-2">
+                                                <img src="img/icon-wind.png" alt="">
+                                                <span></span>
+                                            </span>
+                                            <span class="windDirection d-flex flex-row gap-2">
+                                                <img src="img/icon-compass.png" alt="">
+                                                <span></span>
+                                            </span>
+
+                                            <span class="fallDetection d-flex flex-row gap-2">
+                                                <img src="img/icon-umberella.png" alt="">
+                                                <span></span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="carousel-item">
+                                <div id="nextNextDay" class="col-12 d-flex flex-row text-center text-white py-4">
+                                    <div
+                                        class="col-12 d-flex flex-column align-items-center justify-content-center gap-3">
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                            <div id="weatherStatusIcon"
+                                                class="weatherStatusIcon d-flex align-items-center justify-content-center">
+                                            </div>
+                                            <div class="status"></div>
+                                        </div>
+
+                                        <div class="temperature"></div>
+
+
+                                        <div>
+                                            <div class="city fst-italic"></div>
+                                            <div class="country fst-italic"></div>
+                                            <div class="day fst-italic"> </div>
+                                            <div class="time fst-italic"> </div>
+                                        </div>
+
+                                        <div
+                                            class="col-12 d-flex flex-row align-content-center justify-content-center gap-2">
+
+                                            <span class="windSpeed d-flex flex-row gap-2">
+                                                <img src="img/icon-wind.png" alt="">
+                                                <span></span>
+                                            </span>
+                                            <span class="windDirection d-flex flex-row gap-2">
+                                                <img src="img/icon-compass.png" alt="">
+                                                <span></span>
+                                            </span>
+
+                                            <span class="fallDetection d-flex flex-row gap-2">
+                                                <img src="img/icon-umberella.png" alt="">
+                                                <span></span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev d-flex flex-column" type="button"
+                            data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button
+                            class="carousel-control-next d-flex flex-column align-items-center justify-content-center"
+                            type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
+

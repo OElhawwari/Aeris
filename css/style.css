@@ -1,0 +1,85 @@
+@font-face {
+    font-family: main;
+    src: url(../fonts/main-viagram/Viagram.otf);
+}
+
+@font-face {
+    font-family: city;
+    src: url(../fonts/city-rimons/RIMONS.ttf);
+}
+
+:root {
+    --day-bg-clr: #3067A5;
+    --day-bg-lighter-clr: #6ea7e7;
+    --night-bg-clr: #222222;
+    --night-bg-light-clr: #5e5e5e;
+
+}
+
+::selection {
+    background-color: #86b7d3;
+    color: #352e28;
+}
+
+.main-container-fluid {
+    font-family: main;
+    font-weight: 100;
+    background: radial-gradient(circle at top left, var(--day-bg-lighter-clr), var(--day-bg-clr));
+    /* background: radial-gradient(circle at top left, var(--night-bg-light-clr), var(--night-bg-clr) ); */
+    transition: all 400ms;
+}
+
+.search-form .searchInput {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid white;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.search-form .searchInput::placeholder {
+    color: white;
+    opacity: .5;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+        background-color: transparent !important;
+
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 400;
+}
+.weatherStatusIcon{
+    width: 64px;
+    height: 64px;
+}
+
+.weatherStatusIcon img {
+    width: 100%;
+}
+
+.overlayDay{
+    opacity: 0;
+    background-image: url(../img/dayBgIcon.png);
+    background-position: center;
+    background-size: cover;
+}
+.overlayNight{
+    opacity: 0;
+    background-image: url(../img/nightBgIcon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.carouselText{
+    font-size: .6rem;
+}
