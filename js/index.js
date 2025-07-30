@@ -57,7 +57,7 @@ let carouselTextNext = document.querySelector('.carouselTextNext');
 
 
 async function getWeatherData(query) {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${query}&days=3`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${query}&days=3`);
 
     if (response.ok && response.status != 400) {
         let query = await response.json();
